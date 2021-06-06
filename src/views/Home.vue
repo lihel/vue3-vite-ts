@@ -6,6 +6,9 @@ import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "Home",
-  setup() {}
+  setup() {},
+  created() {
+    console.log(this.$store.state.name);
+  }
 });
 </script>
